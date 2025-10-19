@@ -1,0 +1,10 @@
+services:
+  db:
+    container_name: 'app_db'
+    image: 'postgres:18.0'
+    environment:
+      - 'POSTGRES_DB=auth'
+      - 'POSTGRES_USER=tony'
+      - 'POSTGRES_PASSWORD=1234'
+    ports:
+      - '5432:5432'
